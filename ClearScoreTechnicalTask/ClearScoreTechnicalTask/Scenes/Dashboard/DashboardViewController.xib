@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="ClearScoreTechnicalTask" customModuleProvider="target">
             <connections>
+                <outlet property="circularProgressBarView" destination="oWS-QY-A7Q" id="DV7-JS-npy"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0sR-wq-24S"/>
             </connections>
         </placeholder>
@@ -18,12 +19,42 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CLA-fY-cw6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-IB-mRd">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWS-QY-A7Q" customClass="CircularProgressBarView" customModule="ClearScoreTechnicalTask" customModuleProvider="target">
+                    <rect key="frame" x="72" y="164" width="270" height="270"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oWS-QY-A7Q" secondAttribute="height" multiplier="1:1" id="2Ts-Nx-Hm7"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="139" y="110"/>
+            <constraints>
+                <constraint firstItem="oWS-QY-A7Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="120" id="7tk-Dr-45a"/>
+                <constraint firstItem="7ey-IB-mRd" firstAttribute="bottom" secondItem="CLA-fY-cw6" secondAttribute="bottom" id="8h0-Wl-JLT"/>
+                <constraint firstItem="CLA-fY-cw6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AWt-ky-KBY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CLA-fY-cw6" secondAttribute="trailing" id="Aeq-J5-tQY"/>
+                <constraint firstItem="oWS-QY-A7Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="72" id="H3Z-2P-HmG"/>
+                <constraint firstItem="7ey-IB-mRd" firstAttribute="leading" secondItem="CLA-fY-cw6" secondAttribute="leading" id="Hfy-EB-TlJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oWS-QY-A7Q" secondAttribute="trailing" constant="72" id="R0A-Ue-U1E"/>
+                <constraint firstItem="CLA-fY-cw6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TiH-bm-un8"/>
+                <constraint firstItem="7ey-IB-mRd" firstAttribute="trailing" secondItem="CLA-fY-cw6" secondAttribute="trailing" id="WOR-gv-t1I"/>
+                <constraint firstItem="7ey-IB-mRd" firstAttribute="top" secondItem="CLA-fY-cw6" secondAttribute="top" id="tlm-RY-gPU"/>
+                <constraint firstAttribute="bottom" secondItem="CLA-fY-cw6" secondAttribute="bottom" id="yFD-gv-xZA"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </view>
     </objects>
     <resources>
+        <image name="background" width="640" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -23,6 +23,7 @@
 		DE6F995E27E4DD10008FDE8E /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6F995D27E4DD10008FDE8E /* DashboardViewController.xib */; };
 		DE6F996027E4DF35008FDE8E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F995F27E4DF35008FDE8E /* Utils.swift */; };
 		DE6F996327E4F062008FDE8E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996227E4F062008FDE8E /* ViewModel.swift */; };
+		DE6F996A27E4F7D1008FDE8E /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996927E4F7D1008FDE8E /* CircularProgressBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DE6F995D27E4DD10008FDE8E /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		DE6F995F27E4DF35008FDE8E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DE6F996227E4F062008FDE8E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DE6F996927E4F7D1008FDE8E /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		DE6F98ED27E4D2B7008FDE8E /* ClearScoreTechnicalTask */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F996827E4F7AB008FDE8E /* CustomViews */,
 				DE6F996127E4F062008FDE8E /* BaseClasses */,
 				DE6F992A27E4D53F008FDE8E /* Error */,
 				DE6F991E27E4D53F008FDE8E /* Model */,
@@ -194,6 +197,14 @@
 				DE6F996227E4F062008FDE8E /* ViewModel.swift */,
 			);
 			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		DE6F996827E4F7AB008FDE8E /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F996927E4F7D1008FDE8E /* CircularProgressBarView.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 				DE6F996027E4DF35008FDE8E /* Utils.swift in Sources */,
 				DE6F995C27E4DD01008FDE8E /* DashboardViewController.swift in Sources */,
 				DE6F995827E4D540008FDE8E /* AlertView.swift in Sources */,
+				DE6F996A27E4F7D1008FDE8E /* CircularProgressBarView.swift in Sources */,
 				DE6F996327E4F062008FDE8E /* ViewModel.swift in Sources */,
 				DE6F995727E4D540008FDE8E /* GlobalEnums.swift in Sources */,
 			);
