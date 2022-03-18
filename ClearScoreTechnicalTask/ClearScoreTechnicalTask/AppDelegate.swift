@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        setUpNavigationBarStyle()
         startInitialViewController()
         
         return true
@@ -26,6 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nav.viewControllers = [dashboardView]
         self.window?.rootViewController = nav
         self.window?.makeKeyAndVisible()
+    }
+    
+    func setUpNavigationBarStyle() {
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = .black
+        UIBarButtonItem.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
 }
 
