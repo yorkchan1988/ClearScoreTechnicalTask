@@ -24,6 +24,7 @@
 		DE6F996327E4F062008FDE8E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996227E4F062008FDE8E /* ViewModel.swift */; };
 		DE6F996A27E4F7D1008FDE8E /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996927E4F7D1008FDE8E /* CircularProgressBarView.swift */; };
 		DE6F996D27E507B5008FDE8E /* CircularProgressBarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996C27E507B5008FDE8E /* CircularProgressBarViewTests.swift */; };
+		DE6F996F27E511E3008FDE8E /* CircularBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996E27E511E3008FDE8E /* CircularBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DE6F996227E4F062008FDE8E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DE6F996927E4F7D1008FDE8E /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		DE6F996C27E507B5008FDE8E /* CircularProgressBarViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarViewTests.swift; sourceTree = "<group>"; };
+		DE6F996E27E511E3008FDE8E /* CircularBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6F996927E4F7D1008FDE8E /* CircularProgressBarView.swift */,
+				DE6F996E27E511E3008FDE8E /* CircularBackgroundView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				DE6F996A27E4F7D1008FDE8E /* CircularProgressBarView.swift in Sources */,
 				DE6F996327E4F062008FDE8E /* ViewModel.swift in Sources */,
 				DE6F995727E4D540008FDE8E /* GlobalEnums.swift in Sources */,
+				DE6F996F27E511E3008FDE8E /* CircularBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

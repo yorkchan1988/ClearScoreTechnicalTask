@@ -10,7 +10,8 @@ import UIKit
 
 class DashboardViewController: UIViewController {
     
-    @IBOutlet weak var circularProgressBarView: CircularProgressBarView!
+    @IBOutlet weak var viewCircularBackground: CircularBackgroundView!
+    @IBOutlet weak var viewCircularProgress: CircularProgressBarView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,6 @@ class DashboardViewController: UIViewController {
     
     func setUpCircularProgressBarView() {
         // call the animation with circularViewDuration
-        circularProgressBarView.animateProgress(from: 0, to: 0.8)
+        viewCircularProgress.animateProgress(from: 0, to: 0.8)
     }
 }
