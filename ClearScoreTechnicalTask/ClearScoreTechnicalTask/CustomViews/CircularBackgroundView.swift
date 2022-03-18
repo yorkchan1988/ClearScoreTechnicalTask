@@ -10,6 +10,8 @@ import UIKit
 
 class CircularBackgroundView: UIView {
     
+    static let BackgroundAlpha = 0.4
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -21,7 +23,7 @@ class CircularBackgroundView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundColor = .black
-        alpha = 0.3
+        alpha = CircularBackgroundView.BackgroundAlpha
     }
     
     override func draw(_ rect: CGRect) {

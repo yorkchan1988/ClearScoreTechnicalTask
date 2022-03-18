@@ -11,9 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="ClearScoreTechnicalTask" customModuleProvider="target">
             <connections>
+                <outlet property="lblCreditScore" destination="ggb-vF-GYO" id="7fP-Dz-YJu"/>
+                <outlet property="lblOutOfTotal" destination="Tai-WH-9QB" id="NLI-Lf-4rm"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0sR-wq-24S"/>
                 <outlet property="viewCircularBackground" destination="i82-R5-Ec7" id="BuY-gi-YVr"/>
                 <outlet property="viewCircularProgress" destination="saW-E5-Orm" id="qU7-4h-gmA"/>
+                <outlet property="viewTextContainer" destination="Auq-Rn-FFC" id="QAL-rB-j3u"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,7 +27,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CLA-fY-cw6">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
-                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-IB-mRd">
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-IB-mRd">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
@@ -39,10 +42,45 @@
                             <rect key="frame" x="10" y="10" width="250" height="250"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-Rn-FFC">
+                            <rect key="frame" x="57" y="79" width="156" height="132"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit score is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjB-B9-Hhg">
+                                    <rect key="frame" x="0.0" y="0.0" width="156" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="327" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggb-vF-GYO">
+                                    <rect key="frame" x="23.5" y="31" width="109.5" height="72"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of 700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tai-WH-9QB">
+                                    <rect key="frame" x="38.5" y="111" width="79" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="AjB-B9-Hhg" firstAttribute="top" secondItem="Auq-Rn-FFC" secondAttribute="top" id="46f-go-mNQ"/>
+                                <constraint firstItem="Tai-WH-9QB" firstAttribute="centerX" secondItem="Auq-Rn-FFC" secondAttribute="centerX" id="8Dt-0d-ktI"/>
+                                <constraint firstItem="Tai-WH-9QB" firstAttribute="top" secondItem="ggb-vF-GYO" secondAttribute="bottom" constant="8" id="D80-cv-Rjx"/>
+                                <constraint firstAttribute="bottom" secondItem="Tai-WH-9QB" secondAttribute="bottom" id="Gwg-sl-7mv"/>
+                                <constraint firstAttribute="trailing" secondItem="AjB-B9-Hhg" secondAttribute="trailing" id="eiE-75-OiI"/>
+                                <constraint firstItem="ggb-vF-GYO" firstAttribute="centerX" secondItem="Auq-Rn-FFC" secondAttribute="centerX" id="h2l-dP-Nbt"/>
+                                <constraint firstItem="ggb-vF-GYO" firstAttribute="top" secondItem="AjB-B9-Hhg" secondAttribute="bottom" constant="10" id="rwI-ve-Oav"/>
+                                <constraint firstItem="AjB-B9-Hhg" firstAttribute="leading" secondItem="Auq-Rn-FFC" secondAttribute="leading" id="yS8-Bi-zrK"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="i82-R5-Ec7" firstAttribute="trailing" secondItem="saW-E5-Orm" secondAttribute="trailing" constant="10" id="037-c9-JCk"/>
+                        <constraint firstItem="Auq-Rn-FFC" firstAttribute="centerX" secondItem="oWS-QY-A7Q" secondAttribute="centerX" id="0QB-5b-Kz0"/>
                         <constraint firstAttribute="width" secondItem="oWS-QY-A7Q" secondAttribute="height" multiplier="1:1" id="2Ts-Nx-Hm7"/>
                         <constraint firstItem="saW-E5-Orm" firstAttribute="leading" secondItem="i82-R5-Ec7" secondAttribute="leading" constant="10" id="KOK-zz-7Pq"/>
                         <constraint firstAttribute="bottom" secondItem="i82-R5-Ec7" secondAttribute="bottom" id="YZR-5p-0J4"/>
@@ -50,6 +88,7 @@
                         <constraint firstItem="i82-R5-Ec7" firstAttribute="top" secondItem="oWS-QY-A7Q" secondAttribute="top" id="fUa-Jf-BQC"/>
                         <constraint firstItem="i82-R5-Ec7" firstAttribute="leading" secondItem="oWS-QY-A7Q" secondAttribute="leading" id="kNj-Az-hEi"/>
                         <constraint firstAttribute="trailing" secondItem="i82-R5-Ec7" secondAttribute="trailing" id="pfP-U3-1du"/>
+                        <constraint firstItem="Auq-Rn-FFC" firstAttribute="centerY" secondItem="oWS-QY-A7Q" secondAttribute="centerY" constant="10" id="wJ5-05-CxY"/>
                         <constraint firstItem="saW-E5-Orm" firstAttribute="top" secondItem="i82-R5-Ec7" secondAttribute="top" constant="10" id="znd-1W-MBa"/>
                     </constraints>
                 </view>
