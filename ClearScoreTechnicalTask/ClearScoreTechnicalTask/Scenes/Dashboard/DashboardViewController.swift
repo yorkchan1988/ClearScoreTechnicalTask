@@ -67,7 +67,6 @@ class DashboardViewController: UIViewController {
             UIView.animate(withDuration: AnimationDurationOfCreditScoreDescription) { [unowned self] in
                 viewTextContainer.alpha = 1.0
             } completion: { [unowned self] finished in
-                changeCreditScoreAnimation()
             }
         }
         

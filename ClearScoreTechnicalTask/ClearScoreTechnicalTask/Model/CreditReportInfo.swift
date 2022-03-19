@@ -10,11 +10,11 @@ import Foundation
 struct CreditReportInfo: Codable, Equatable {
     let score: UInt
     let maxScoreValue: UInt
-//    let clientRef: String
-//    let currentShortTermDebt: UInt
-//    let currentShortTermCreditLimit: UInt
-//    let currentLongTermDebt: UInt
-//    let currentLongTermCreditLimit: UInt
-//    let equifaxScoreBand: UInt
-//    let equifaxScoreBandDescription: String
+    let clientRef: String
+    let currentShortTermDebt: UInt?
+    let currentShortTermCreditLimit: UInt?
+    let currentLongTermDebt: UInt?
+    let currentLongTermCreditLimit: UInt?
+    let equifaxScoreBand: UInt
+    let equifaxScoreBandDescription: String
 }
