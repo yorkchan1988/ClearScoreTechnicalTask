@@ -36,6 +36,9 @@
 		DE6F998727E62DBF008FDE8E /* CreditReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6F998627E62DBF008FDE8E /* CreditReportViewController.xib */; };
 		DE6F998927E62DE6008FDE8E /* CreditReportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F998827E62DE6008FDE8E /* CreditReportRouter.swift */; };
 		DE6F998B27E631AA008FDE8E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F998A27E631AA008FDE8E /* NavigationController.swift */; };
+		DE6F999027E6666B008FDE8E /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F998F27E6666B008FDE8E /* NetworkManagerTests.swift */; };
+		DE6F999327E6670C008FDE8E /* CreditValuesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F999227E6670C008FDE8E /* CreditValuesRepositoryTests.swift */; };
+		DE6F999627E66746008FDE8E /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F999527E66746008FDE8E /* FakeNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		DE6F998627E62DBF008FDE8E /* CreditReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditReportViewController.xib; sourceTree = "<group>"; };
 		DE6F998827E62DE6008FDE8E /* CreditReportRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportRouter.swift; sourceTree = "<group>"; };
 		DE6F998A27E631AA008FDE8E /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		DE6F998F27E6666B008FDE8E /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		DE6F999227E6670C008FDE8E /* CreditValuesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditValuesRepositoryTests.swift; sourceTree = "<group>"; };
+		DE6F999527E66746008FDE8E /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,9 @@
 		DE6F990427E4D2C0008FDE8E /* ClearScoreTechnicalTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F999427E66739008FDE8E /* FakeClass */,
+				DE6F999127E666F1008FDE8E /* Repository */,
+				DE6F998E27E665A2008FDE8E /* Network */,
 				DE6F998027E5FE37008FDE8E /* Utils */,
 				DE6F996B27E5079C008FDE8E /* CustomVIews */,
 			);
@@ -265,6 +274,30 @@
 				DE6F998627E62DBF008FDE8E /* CreditReportViewController.xib */,
 			);
 			path = CreditDetail;
+			sourceTree = "<group>";
+		};
+		DE6F998E27E665A2008FDE8E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F998F27E6666B008FDE8E /* NetworkManagerTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE6F999127E666F1008FDE8E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F999227E6670C008FDE8E /* CreditValuesRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DE6F999427E66739008FDE8E /* FakeClass */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F999527E66746008FDE8E /* FakeNetworkManager.swift */,
+			);
+			path = FakeClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,7 +432,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6F999627E66746008FDE8E /* FakeNetworkManager.swift in Sources */,
+				DE6F999027E6666B008FDE8E /* NetworkManagerTests.swift in Sources */,
 				DE6F996D27E507B5008FDE8E /* CircularProgressBarViewTests.swift in Sources */,
+				DE6F999327E6670C008FDE8E /* CreditValuesRepositoryTests.swift in Sources */,
 				DE6F997F27E5FE34008FDE8E /* UtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
