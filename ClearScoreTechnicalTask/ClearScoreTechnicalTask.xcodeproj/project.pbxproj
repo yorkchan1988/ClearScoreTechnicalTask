@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DE6F98EF27E4D2B7008FDE8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F98EE27E4D2B7008FDE8E /* AppDelegate.swift */; };
-		DE6F98F327E4D2B7008FDE8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F98F227E4D2B7008FDE8E /* ViewController.swift */; };
 		DE6F98F827E4D2BF008FDE8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6F98F727E4D2BF008FDE8E /* Assets.xcassets */; };
 		DE6F98FB27E4D2BF008FDE8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6F98F927E4D2BF008FDE8E /* LaunchScreen.storyboard */; };
 		DE6F994427E4D540008FDE8E /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F992227E4D53F008FDE8E /* NetworkOperation.swift */; };
@@ -32,6 +31,11 @@
 		DE6F997B27E5EC0D008FDE8E /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997A27E5EC0D008FDE8E /* DashboardViewModel.swift */; };
 		DE6F997D27E5EC1F008FDE8E /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997C27E5EC1F008FDE8E /* DashboardRouter.swift */; };
 		DE6F997F27E5FE34008FDE8E /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997E27E5FE34008FDE8E /* UtilsTests.swift */; };
+		DE6F998327E62D68008FDE8E /* CreditReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F998227E62D68008FDE8E /* CreditReportViewController.swift */; };
+		DE6F998527E62D7E008FDE8E /* CreditReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F998427E62D7E008FDE8E /* CreditReportViewModel.swift */; };
+		DE6F998727E62DBF008FDE8E /* CreditReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6F998627E62DBF008FDE8E /* CreditReportViewController.xib */; };
+		DE6F998927E62DE6008FDE8E /* CreditReportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F998827E62DE6008FDE8E /* CreditReportRouter.swift */; };
+		DE6F998B27E631AA008FDE8E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F998A27E631AA008FDE8E /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +51,6 @@
 /* Begin PBXFileReference section */
 		DE6F98EB27E4D2B7008FDE8E /* ClearScoreTechnicalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScoreTechnicalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6F98EE27E4D2B7008FDE8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE6F98F227E4D2B7008FDE8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE6F98F727E4D2BF008FDE8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE6F98FA27E4D2BF008FDE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE6F98FC27E4D2BF008FDE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +76,11 @@
 		DE6F997A27E5EC0D008FDE8E /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		DE6F997C27E5EC1F008FDE8E /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
 		DE6F997E27E5FE34008FDE8E /* UtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		DE6F998227E62D68008FDE8E /* CreditReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportViewController.swift; sourceTree = "<group>"; };
+		DE6F998427E62D7E008FDE8E /* CreditReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportViewModel.swift; sourceTree = "<group>"; };
+		DE6F998627E62DBF008FDE8E /* CreditReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditReportViewController.xib; sourceTree = "<group>"; };
+		DE6F998827E62DE6008FDE8E /* CreditReportRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportRouter.swift; sourceTree = "<group>"; };
+		DE6F998A27E631AA008FDE8E /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +131,6 @@
 				DE6F993027E4D53F008FDE8E /* Scenes */,
 				DE6F993E27E4D53F008FDE8E /* Utils */,
 				DE6F98EE27E4D2B7008FDE8E /* AppDelegate.swift */,
-				DE6F98F227E4D2B7008FDE8E /* ViewController.swift */,
 				DE6F98F727E4D2BF008FDE8E /* Assets.xcassets */,
 				DE6F98F927E4D2BF008FDE8E /* LaunchScreen.storyboard */,
 				DE6F98FC27E4D2BF008FDE8E /* Info.plist */,
@@ -188,6 +195,7 @@
 		DE6F993027E4D53F008FDE8E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F998127E62D4B008FDE8E /* CreditDetail */,
 				DE6F995A27E4DCF1008FDE8E /* Dashboard */,
 			);
 			path = Scenes;
@@ -218,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6F996227E4F062008FDE8E /* ViewModel.swift */,
+				DE6F998A27E631AA008FDE8E /* NavigationController.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -245,6 +254,17 @@
 				DE6F997E27E5FE34008FDE8E /* UtilsTests.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE6F998127E62D4B008FDE8E /* CreditDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F998227E62D68008FDE8E /* CreditReportViewController.swift */,
+				DE6F998427E62D7E008FDE8E /* CreditReportViewModel.swift */,
+				DE6F998827E62DE6008FDE8E /* CreditReportRouter.swift */,
+				DE6F998627E62DBF008FDE8E /* CreditReportViewController.xib */,
+			);
+			path = CreditDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE6F98FB27E4D2BF008FDE8E /* LaunchScreen.storyboard in Resources */,
+				DE6F998727E62DBF008FDE8E /* CreditReportViewController.xib in Resources */,
 				DE6F98F827E4D2BF008FDE8E /* Assets.xcassets in Resources */,
 				DE6F995E27E4DD10008FDE8E /* DashboardViewController.xib in Resources */,
 			);
@@ -348,8 +369,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6F998327E62D68008FDE8E /* CreditReportViewController.swift in Sources */,
+				DE6F998B27E631AA008FDE8E /* NavigationController.swift in Sources */,
 				DE6F994727E4D540008FDE8E /* NetworkManager.swift in Sources */,
-				DE6F98F327E4D2B7008FDE8E /* ViewController.swift in Sources */,
+				DE6F998527E62D7E008FDE8E /* CreditReportViewModel.swift in Sources */,
 				DE6F98EF27E4D2B7008FDE8E /* AppDelegate.swift in Sources */,
 				DE6F994827E4D540008FDE8E /* QueueManager.swift in Sources */,
 				DE6F997B27E5EC0D008FDE8E /* DashboardViewModel.swift in Sources */,
@@ -357,6 +380,7 @@
 				DE6F994927E4D540008FDE8E /* ErrorMessages.swift in Sources */,
 				DE6F994427E4D540008FDE8E /* NetworkOperation.swift in Sources */,
 				DE6F994A27E4D540008FDE8E /* NetworkError.swift in Sources */,
+				DE6F998927E62DE6008FDE8E /* CreditReportRouter.swift in Sources */,
 				DE6F996027E4DF35008FDE8E /* Utils.swift in Sources */,
 				DE6F995C27E4DD01008FDE8E /* DashboardViewController.swift in Sources */,
 				DE6F995827E4D540008FDE8E /* AlertView.swift in Sources */,

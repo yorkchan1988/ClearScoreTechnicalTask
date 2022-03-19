@@ -29,8 +29,10 @@ class DashboardViewModel: ViewModel {
                 self.didErrorOccur?(error)
                 break
             case .success(let data):
-                self.creditValue = data
-                self.didDataChange?(data)
+                if (self.creditValue != data) {
+                    self.creditValue = data
+                    self.didDataChange?(data)
+                }
                 break
             }
         }

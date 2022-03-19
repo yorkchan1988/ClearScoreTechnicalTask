@@ -28,6 +28,7 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Dashboard"
+        navigationItem.backButtonTitle = ""
         
         bindViewModel()
         
@@ -44,7 +45,8 @@ class DashboardViewController: UIViewController {
         viewModel.getCreditValues()
     }
     
-    func bindViewModel() {
+    // MARK: Private
+    private func bindViewModel() {
         viewModel.didDataChange = { [unowned self] data in
             changeCreditScoreAnimation()
         }
@@ -53,20 +55,20 @@ class DashboardViewController: UIViewController {
         }
     }
     
-    func setInitialState() {
+    private func setInitialState() {
         viewCircularBackground.alpha = 0
         viewTextContainer.alpha = 0
         lblCreditScore.alpha = 0
     }
     
-    func showInitialCreditScoreViewAnimation() {
+    private func showInitialCreditScoreViewAnimation() {
         
         setInitialState()
         
         let showTextAnimation = { [unowned self] in
             UIView.animate(withDuration: AnimationDurationOfCreditScoreDescription) { [unowned self] in
                 viewTextContainer.alpha = 1.0
-            } completion: { [unowned self] finished in
+            } completion: { finished in
             }
         }
         
@@ -77,7 +79,7 @@ class DashboardViewController: UIViewController {
         }
     }
     
-    func changeCreditScoreAnimation() {
+    private func changeCreditScoreAnimation() {
         lblCreditScore.alpha = 0
         
         let creditScore = viewModel.creditValue?.creditReportInfo.score ?? 0
@@ -95,5 +97,12 @@ class DashboardViewController: UIViewController {
         let percentage = CGFloat(creditScore) / CGFloat(maxCreditScore)
         // call the animation with circularViewDuration
         viewCircularProgress.animateProgress(from: 0, to: percentage)
+    }
+    
+    // MARK: IBAction
+    @IBAction func didPressCreditScoreView(_ sender: Any) {
+        if let creditValue = viewModel.creditValue {
+            router.toDetailPage(creditValue: creditValue)
+        }
     }
 }
