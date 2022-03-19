@@ -25,6 +25,13 @@
 		DE6F996A27E4F7D1008FDE8E /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996927E4F7D1008FDE8E /* CircularProgressBarView.swift */; };
 		DE6F996D27E507B5008FDE8E /* CircularProgressBarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996C27E507B5008FDE8E /* CircularProgressBarViewTests.swift */; };
 		DE6F996F27E511E3008FDE8E /* CircularBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F996E27E511E3008FDE8E /* CircularBackgroundView.swift */; };
+		DE6F997127E5E592008FDE8E /* CreditValuesAPIOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997027E5E591008FDE8E /* CreditValuesAPIOperation.swift */; };
+		DE6F997327E5E5FE008FDE8E /* CreditValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997227E5E5FE008FDE8E /* CreditValue.swift */; };
+		DE6F997527E5E637008FDE8E /* CreditReportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997427E5E637008FDE8E /* CreditReportInfo.swift */; };
+		DE6F997927E5EAEA008FDE8E /* CreditValuesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997827E5EAEA008FDE8E /* CreditValuesRepository.swift */; };
+		DE6F997B27E5EC0D008FDE8E /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997A27E5EC0D008FDE8E /* DashboardViewModel.swift */; };
+		DE6F997D27E5EC1F008FDE8E /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997C27E5EC1F008FDE8E /* DashboardRouter.swift */; };
+		DE6F997F27E5FE34008FDE8E /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F997E27E5FE34008FDE8E /* UtilsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		DE6F996927E4F7D1008FDE8E /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		DE6F996C27E507B5008FDE8E /* CircularProgressBarViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarViewTests.swift; sourceTree = "<group>"; };
 		DE6F996E27E511E3008FDE8E /* CircularBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularBackgroundView.swift; sourceTree = "<group>"; };
+		DE6F997027E5E591008FDE8E /* CreditValuesAPIOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditValuesAPIOperation.swift; sourceTree = "<group>"; };
+		DE6F997227E5E5FE008FDE8E /* CreditValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditValue.swift; sourceTree = "<group>"; };
+		DE6F997427E5E637008FDE8E /* CreditReportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfo.swift; sourceTree = "<group>"; };
+		DE6F997827E5EAEA008FDE8E /* CreditValuesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditValuesRepository.swift; sourceTree = "<group>"; };
+		DE6F997A27E5EC0D008FDE8E /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		DE6F997C27E5EC1F008FDE8E /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		DE6F997E27E5FE34008FDE8E /* UtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,7 @@
 		DE6F990427E4D2C0008FDE8E /* ClearScoreTechnicalTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F998027E5FE37008FDE8E /* Utils */,
 				DE6F996B27E5079C008FDE8E /* CustomVIews */,
 			);
 			path = ClearScoreTechnicalTaskTests;
@@ -128,6 +143,8 @@
 		DE6F991E27E4D53F008FDE8E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F997227E5E5FE008FDE8E /* CreditValue.swift */,
+				DE6F997427E5E637008FDE8E /* CreditReportInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 		DE6F992327E4D53F008FDE8E /* apiOperations */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F997027E5E591008FDE8E /* CreditValuesAPIOperation.swift */,
 			);
 			path = apiOperations;
 			sourceTree = "<group>";
@@ -162,6 +180,7 @@
 		DE6F992D27E4D53F008FDE8E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F997827E5EAEA008FDE8E /* CreditValuesRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -188,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				DE6F995B27E4DD01008FDE8E /* DashboardViewController.swift */,
+				DE6F997A27E5EC0D008FDE8E /* DashboardViewModel.swift */,
+				DE6F997C27E5EC1F008FDE8E /* DashboardRouter.swift */,
 				DE6F995D27E4DD10008FDE8E /* DashboardViewController.xib */,
 			);
 			path = Dashboard;
@@ -216,6 +237,14 @@
 				DE6F996C27E507B5008FDE8E /* CircularProgressBarViewTests.swift */,
 			);
 			path = CustomVIews;
+			sourceTree = "<group>";
+		};
+		DE6F998027E5FE37008FDE8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F997E27E5FE34008FDE8E /* UtilsTests.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +352,8 @@
 				DE6F98F327E4D2B7008FDE8E /* ViewController.swift in Sources */,
 				DE6F98EF27E4D2B7008FDE8E /* AppDelegate.swift in Sources */,
 				DE6F994827E4D540008FDE8E /* QueueManager.swift in Sources */,
+				DE6F997B27E5EC0D008FDE8E /* DashboardViewModel.swift in Sources */,
+				DE6F997327E5E5FE008FDE8E /* CreditValue.swift in Sources */,
 				DE6F994927E4D540008FDE8E /* ErrorMessages.swift in Sources */,
 				DE6F994427E4D540008FDE8E /* NetworkOperation.swift in Sources */,
 				DE6F994A27E4D540008FDE8E /* NetworkError.swift in Sources */,
@@ -330,9 +361,13 @@
 				DE6F995C27E4DD01008FDE8E /* DashboardViewController.swift in Sources */,
 				DE6F995827E4D540008FDE8E /* AlertView.swift in Sources */,
 				DE6F996A27E4F7D1008FDE8E /* CircularProgressBarView.swift in Sources */,
+				DE6F997127E5E592008FDE8E /* CreditValuesAPIOperation.swift in Sources */,
+				DE6F997527E5E637008FDE8E /* CreditReportInfo.swift in Sources */,
 				DE6F996327E4F062008FDE8E /* ViewModel.swift in Sources */,
 				DE6F995727E4D540008FDE8E /* GlobalEnums.swift in Sources */,
+				DE6F997D27E5EC1F008FDE8E /* DashboardRouter.swift in Sources */,
 				DE6F996F27E511E3008FDE8E /* CircularBackgroundView.swift in Sources */,
+				DE6F997927E5EAEA008FDE8E /* CreditValuesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE6F996D27E507B5008FDE8E /* CircularProgressBarViewTests.swift in Sources */,
+				DE6F997F27E5FE34008FDE8E /* UtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

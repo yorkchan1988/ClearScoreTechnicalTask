@@ -10,7 +10,6 @@ import Foundation
 protocol NetworkManagerProtocol {
     
     func requestData(apiPath: String, httpMethod: HTTPMethod, parameters:[String:String], completionHandler : @escaping (Result<Data, NetworkError>) -> ())
-    func requestImage(urlString: String, completionHandler : @escaping (Result<Data, NetworkError>) -> ())
 }
 
 class NetworkManager: NetworkManagerProtocol {
@@ -93,33 +92,5 @@ class NetworkManager: NetworkManagerProtocol {
             components.queryItems?.append(URLQueryItem(name: key, value: value))
         }
         components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
-    }
-    
-    // MARK: Image Request
-    func requestImage(urlString: String, completionHandler : @escaping (Result<Data, NetworkError>) -> ()) {
-            
-        guard let url = URL(string: urlString) else {
-            completionHandler(.failure(NetworkError.clientError))
-            return
-        }
-        
-        let request = URLRequest(url: url)
-        print(String(format: "%@ - url: %@", #function, url.absoluteString))
-        let task = session.dataTask(with: request as URLRequest) { data, response, error in
-            
-            guard let data = data else {
-                completionHandler(.failure(NetworkError.serverError))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
-                completionHandler(.failure(NetworkError.serverError))
-                return
-            }
-            
-            print(String(format: "%@ - url: %@ -- success", #function, url.absoluteString))
-            completionHandler(.success(data))
-        }
-        task.resume()
     }
 }

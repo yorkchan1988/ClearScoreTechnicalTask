@@ -24,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let nav = UINavigationController()
         let dashboardView = DashboardViewController(nibName: "DashboardViewController", bundle: nil)
+        let viewModel = DashboardViewModel()
+        let router = DashboardRouter(view: dashboardView)
+        dashboardView.viewModel = viewModel
+        dashboardView.router = router
         nav.viewControllers = [dashboardView]
         self.window?.rootViewController = nav
         self.window?.makeKeyAndVisible()

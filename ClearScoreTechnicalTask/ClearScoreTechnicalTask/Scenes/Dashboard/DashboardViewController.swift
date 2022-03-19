@@ -21,15 +21,35 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var lblCreditScore: UILabel!
     @IBOutlet weak var lblOutOfTotal: UILabel!
     
+    var viewModel: DashboardViewModel!
+    var router: DashboardRouter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Dashboard"
         
+        bindViewModel()
+        
         setInitialState()
         
         DispatchQueue.main.asyncAfter(deadline: .now()+InitialDelayToShowCreditScoreView) { [unowned self] in
-            showCreditScoreViewAnimation()
+            showInitialCreditScoreViewAnimation()
+        }
+    }
+    
+    // let the user to see the most updated value when this page is shown
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.getCreditValues()
+    }
+    
+    func bindViewModel() {
+        viewModel.didDataChange = { [unowned self] data in
+            changeCreditScoreAnimation()
+        }
+        viewModel.didErrorOccur = { [unowned self] error in
+            AlertView.showErrorAlert(error: error, target: self)
         }
     }
     
@@ -39,25 +59,15 @@ class DashboardViewController: UIViewController {
         lblCreditScore.alpha = 0
     }
     
-    func showCreditScoreViewAnimation() {
+    func showInitialCreditScoreViewAnimation() {
         
         setInitialState()
-        
-        let showCreditScoreAnimation = { [unowned self] in
-            UIView.animate(withDuration: AnimationDurationOfCreditScoreText) { [unowned self] in
-                lblCreditScore.alpha = 1.0
-            } completion: { finished in
-                
-            }
-        }
         
         let showTextAnimation = { [unowned self] in
             UIView.animate(withDuration: AnimationDurationOfCreditScoreDescription) { [unowned self] in
                 viewTextContainer.alpha = 1.0
             } completion: { [unowned self] finished in
-                showCreditScoreAnimation()
-                // call the animation with circularViewDuration
-                viewCircularProgress.animateProgress(from: 0, to: 0.8)
+                changeCreditScoreAnimation()
             }
         }
         
@@ -66,5 +76,25 @@ class DashboardViewController: UIViewController {
         } completion: { finished in
             showTextAnimation()
         }
+    }
+    
+    func changeCreditScoreAnimation() {
+        lblCreditScore.alpha = 0
+        
+        let creditScore = viewModel.creditValue?.creditReportInfo.score ?? 0
+        lblCreditScore.text = String(format: "%ld", creditScore)
+        
+        let maxCreditScore = viewModel.creditValue?.creditReportInfo.maxScoreValue ?? 0
+        lblOutOfTotal.text = String(format: "out of %ld", maxCreditScore)
+        
+        UIView.animate(withDuration: AnimationDurationOfCreditScoreText) { [unowned self] in
+            lblCreditScore.alpha = 1.0
+        } completion: { finished in
+            
+        }
+        
+        let percentage = CGFloat(creditScore) / CGFloat(maxCreditScore)
+        // call the animation with circularViewDuration
+        viewCircularProgress.animateProgress(from: 0, to: percentage)
     }
 }
