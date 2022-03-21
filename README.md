@@ -21,3 +21,8 @@ It is a technical task from ClearScore. In this task, a circular progress view i
 #### Network Layer
 
 - In this layer, it will manage all logics related to calling an API. For example, how many current network calls are allowed at the same time, contructing an absolute URL and the post body etc.
+
+## TODO
+
+- Add pull to refresh to refresh the data, so that the user can refresh to get the latest data easily
+- Use NSLocalizedString for all the hardcoded strings
