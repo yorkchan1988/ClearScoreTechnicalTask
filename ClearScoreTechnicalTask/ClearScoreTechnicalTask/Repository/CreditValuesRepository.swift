@@ -1,6 +1,6 @@
 //
 //  SearchRepository.swift
-//  CandySpaceIOSTechnicalTask
+//  ClearScoreIOSTechnicalTask
 //
 //  Created by YORK CHAN on 12/3/2022.
 //
@@ -27,7 +27,7 @@ class CreditValuesRepository {
     /// - Parameter completionHandler: The completion block
     func getCreditValues(completionHandler: ((_ result: Result<CreditValue, NetworkError>) -> Void)?) {
         
-        let operation = CreditValuesAPIOperation()
+        let operation = CreditValuesAPIOperation(networkManager: networkManager)
         operation.completionHandler = completionHandler
         QueueManager.shared.addOperation(operation)
     }

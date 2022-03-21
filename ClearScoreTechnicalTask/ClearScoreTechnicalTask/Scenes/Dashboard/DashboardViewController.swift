@@ -48,7 +48,7 @@ class DashboardViewController: UIViewController {
     // MARK: Private
     private func bindViewModel() {
         viewModel.didDataChange = { [unowned self] data in
-            changeCreditScoreAnimation()
+            updateCreditScore()
         }
         viewModel.didErrorOccur = { [unowned self] error in
             AlertView.showErrorAlert(error: error, target: self)
@@ -79,7 +79,7 @@ class DashboardViewController: UIViewController {
         }
     }
     
-    private func changeCreditScoreAnimation() {
+    private func updateCreditScore() {
         lblCreditScore.alpha = 0
         
         let creditScore = viewModel.creditValue?.creditReportInfo.score ?? 0

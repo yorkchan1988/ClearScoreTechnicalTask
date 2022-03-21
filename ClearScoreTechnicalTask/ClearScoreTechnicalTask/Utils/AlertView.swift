@@ -1,6 +1,6 @@
 //
 //  AlertView.swift
-//  CandySpaceIOSTechnicalTask
+//  ClearScoreIOSTechnicalTask
 //
 //  Created by YORK CHAN on 13/3/2022.
 //

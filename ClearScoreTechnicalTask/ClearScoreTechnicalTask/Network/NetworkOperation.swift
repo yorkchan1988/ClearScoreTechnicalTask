@@ -1,6 +1,6 @@
 //
 //  NetworkOperation.swift
-//  CandySpaceIOSTechnicalTask
+//  ClearScoreIOSTechnicalTask
 //
 //  Created by YORK CHAN on 12/3/2022.
 //

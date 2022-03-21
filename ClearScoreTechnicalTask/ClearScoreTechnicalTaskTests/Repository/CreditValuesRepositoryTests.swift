@@ -14,7 +14,7 @@ import ClearScoreTechnicalTask
 
 class CreditValuesRepositoryTests: XCTestCase {
     
-    func test_searchPhotos_success() throws {
+    func test_getCreditValues_success() throws {
         // GIVEN
         let networkManager = FakeNetworkManager()
         let repository = CreditValuesRepository(networkManager: networkManager, queueManager: QueueManager.shared)
