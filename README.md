@@ -4,7 +4,7 @@ It is a technical task from ClearScore. In this task, a circular progress view i
 
 ## Architecture Design
 
-![alt text](https://github.com/yorkchan1988/ClearScoreTechnicalTask/blob/main/architecture_diagram.png?raw=true)
+![alt text](architecture_diagram.png)
 
 #### View
 
